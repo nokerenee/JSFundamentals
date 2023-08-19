@@ -33,13 +33,13 @@ console.log(three / four); //0.75
 console.log(three - four); //-1
 console.log(three < four); //true
 console.log(thirty < four); //true 
-
-if (0) console.log ('#1 zero is true'); //will not print
-if ("0") console.log ('#2 zero is true'); //will print
-if (null) console.log ('null is true'); //will not print
-if (-1) console.log ('negative is true'); //will print
-if (1) console.log ('positive is true');//will print 
-
+*/ 
+if (0) console.log ('#1 zero is true'); //will not print because 0 has a zero value, therefore it is false
+if ("0") console.log ('#2 zero is true'); //will print because "0" is a non-empty string, therefore it is true
+if (null) console.log ('null is true'); //will not print because null has no value, therefore it is false
+if (-1) console.log ('negative is true'); //will print because -1 is a non-zero number, therefore it is true
+if (1) console.log ('positive is true');//will print because 1 is a non-zero number, therefore it is true
+/*
 let a = 2, b = 3; 
 let result = ` ${ a } + ${ b } is `; 
 
@@ -51,9 +51,9 @@ if (a + b < 10) {
 console.log(result);
 
 console.log(a + b < 10 ? result += 'less than 10' : result += 'greater than 10');
-*/ 
 
-/*function getGreeting(name) { 
+
+function getGreeting(name) { 
     return 'Hello ' + name + '!' ; 
 } 
 const getGreeting = function(name) {
@@ -175,14 +175,15 @@ for (let key in denver) {
 };
 
 let teamSports = ['Hockey', 'Cricket', 'Volleyball']; 
-let moreSports = teamSports;
+// let moreSports = teamSports;
 let moreSports = teamSports.slice();
 moreSports.push('Tennis');
 moreSports.unshift('Basketball');
 console.log('teamSports:', teamSports);
 console.log('moreSports:', moreSports);
 console.log('Original teamSports', teamSports);
-
+*/
+/*
 let dog1 = 'Bingo'; 
 let dog2 = dog1;
 dog2 = 'Molly';
@@ -197,7 +198,7 @@ console.log('cat1:', cat1);
 console.log('cat2:', cat2);
 console.log('Original cat1:', cat1);
 
-// teamSports: The teamSports array was modified using the moreSports variable, but the original array was unchanged because moreSports is a reference to the same array in memory. The changes made to moreSports didn't affect the original teamSports.
+// teamSports: The teamSports array was modified using the moreSports (slice) variable, but the original array was unchanged because moreSports is a reference to the same array in memory. The changes made to moreSports didn't affect the original teamSports.
 // dog1: The dog1 variable was not modified in the code provided, so its value remains 'Bingo'.
 // cat1: The cat1 object's name property was modified using the cat2 variable, and both cat1 and cat2 reference the same object in memory. Changing the name property of one variable affects the other variable as well.
 // In summary, changes made to variables referencing the same object in memory will affect that object regardless of which variable is used to make the change. However, variables that reference primitive values (like strings and numbers) store those values directly, so changes to one variable don't affect others.
@@ -218,7 +219,7 @@ let Person2 = new Person('Rowan Atkinson', 68);
 
 console.log('Person 1 can drive:', Person1.canDrive());
 console.log('Person 2 can drive:', Person2.canDrive());
-*/
+
 
 class PersonClass {
     constructor(name, age) {
@@ -238,3 +239,4 @@ let Person3 = new PersonClass('Meryl Streep', 77);
 console.log('Person 1 can drive:', Person1.canDrive());
 console.log('Person 2 can drive:', Person2.canDrive());
 console.log('Person 3 can drive:', Person3.canDrive());
+*/
